@@ -41,6 +41,7 @@ def draw(images, name, columns=4):
         plt.subplot(rows, columns, i + 1), plt.imshow(images[i]), plt.axis('off')
     plt.savefig(name)
     print("file saved at", name)
+    plt.close()
 
 
 dir = input("Enter the .nii file path: e.g. C:/Users/Name/nii2png/file.nii \n")
